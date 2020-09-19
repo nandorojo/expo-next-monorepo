@@ -1,6 +1,6 @@
-# 💸 expo-next-monorepo
+# 💸 Expo + Next.js Monorepo 
 
-Minimal boilerplate monorepo with Expo/React Native Web + Next.js + TypeScript. Uses yarn workspaces and lerna.
+Minimal monorepo with Expo/React Native Web + Next.js + TypeScript. Uses yarn workspaces.
 
 # Folders
 
