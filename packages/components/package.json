@@ -1,0 +1,10 @@
+{
+  "name": "@shared/components",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.28.0"
+  },
+  "types": "index.tsx"
+}

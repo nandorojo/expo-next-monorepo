@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "expo-yarn-workspaces": "^1.2.1",
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
