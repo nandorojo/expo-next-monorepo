@@ -59,10 +59,24 @@ Add `@shared/components` to `next.config.js` in your expo app's folder.
 ```js
 // packages/expo-app/next.config.js
 const { withExpo } = require("@expo/next-adapter");
+
+// 🚨🚨🚨 if you rename @shared/components, edit it here!
 const withTM = require("next-transpile-modules")(["@shared/components"]);
+
 const withPlugins = require("next-compose-plugins");
 
 module.exports = withPlugins([withTM, [withExpo, { projectRoot: __dirname }]]);
 ```
 
 Enjoy your awesome monorepo.
+
+Make sure to add any other folders you make to your `next.config.js` after `next-transpile-modules`.
+
+# Possible Errors
+
+```sh
+Module parse failed: Unexpected token (4:5)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+```
+
+If you see that error, you haven't configured the `next.config.js` properly, see above.
