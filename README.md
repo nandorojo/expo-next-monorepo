@@ -80,3 +80,4 @@ You may need an appropriate loader to handle this file type, currently no loader
 ```
 
 If you see that error, you haven't configured the `next.config.js` properly, see above.
+
