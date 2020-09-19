@@ -7,5 +7,9 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "native": "cd packages/expo-app && yarn start",
+    "web": "cd packages/expo-app && yarn next"
+  }
 }
