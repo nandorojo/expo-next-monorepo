@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "native": "cd packages/expo-app && yarn start",
-    "web": "cd packages/expo-app && yarn next"
+    "native": "cd packages/app && yarn start",
+    "web": "cd packages/app && yarn next"
   }
 }
