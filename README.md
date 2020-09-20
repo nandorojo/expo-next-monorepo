@@ -68,6 +68,8 @@ const withPlugins = require("next-compose-plugins");
 module.exports = withPlugins([withTM, [withExpo, { projectRoot: __dirname }]]);
 ```
 
+Run `yarn install` from the root of your monorepo.
+
 Enjoy your awesome monorepo.
 
 Make sure to add any other folders you make to your `next.config.js` after `next-transpile-modules`.
