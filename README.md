@@ -19,7 +19,7 @@ Open `packages/components` and start editing. Watch changes happen instantly in 
 
 # How do I do this? 🐻 🧐
 
-Create a repo. Add a `package.json` with `workspaces`. Run `yarn add -D expo-yarn-workspaces` inside of it your root.
+Create a repo. Add a `package.json` with `workspaces`. Run `yarn add -D expo-yarn-workspaces` inside your root folder.
 
 ```json
 // package.json
