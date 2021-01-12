@@ -54,14 +54,14 @@ Now we need to add it to next's config.
 
 `yarn add next-transpile-modules next-compose-plugins`
 
-Add `@shared/components` to `next.config.js` in your expo app's folder.
+Add `@shared/` to `next.config.js` in your expo app's folder. This makes all folders that start with `@shared/` get transpiled, which is necessary for nextjs.
 
 ```js
 // packages/expo-app/next.config.js
 const { withExpo } = require("@expo/next-adapter");
 
-// 🚨🚨🚨 if you rename @shared/components, edit it here!
-const withTM = require("next-transpile-modules")(["@shared/components"]);
+// 🚨🚨🚨 if you rename @shared/, edit it here!
+const withTM = require("next-transpile-modules")(["@shared/"]);
 
 const withPlugins = require("next-compose-plugins");
 
