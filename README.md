@@ -2,6 +2,8 @@
 
 Minimal monorepo with Expo/React Native Web + Next.js + TypeScript. Uses yarn workspaces.
 
+> This repo uses older versions of Expo/Next. You can easily upgrade them in your `packages/expo-app` folder.
+
 # Folders
 
 - `packages/components` (import as `@shared/components`)
