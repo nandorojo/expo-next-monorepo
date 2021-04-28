@@ -12,24 +12,35 @@
   },
   "dependencies": {
     "@shared/components": "*",
-    "expo": "~38.0.8",
-    "expo-status-bar": "^1.0.2",
+    "expo": "^41.0.0",
+    "expo-status-bar": "~1.0.4",
     "moment": "^2.28.0",
-    "next": "^9.5.3",
+    "next": "^10.2.0",
     "next-transpile-modules": "^4.1.0",
-    "react": "~16.11.0",
-    "react-dom": "~16.11.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
-    "react-native-web": "~0.11.7"
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.6",
+    "@babel/core": "~7.9.0",
     "@expo/next-adapter": "^2.1.32",
-    "@types/react": "~16.9.41",
-    "@types/react-native": "~0.62.13",
+    "@types/react": "~16.9.35",
+    "@types/react-native": "~0.63.2",
     "next-compose-plugins": "^2.2.0",
-    "typescript": "~3.9.5"
+    "typescript": "~4.0.0"
   },
   "private": true,
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "expo-yarn-workspaces": {
+    "symlinks": [
+      "react-native-unimodules",
+      "expo-constants",
+      "expo-updates",
+      "@unimodules/core",
+      "@unimodules/react-native-adapter",
+      "unimodules-constants-interface",
+      "unimodules-font-interface"
+    ]
+  }
 }

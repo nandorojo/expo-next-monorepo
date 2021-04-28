@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "expo-yarn-workspaces": "^1.2.1"
+    "expo-yarn-workspaces": "^1.5.1"
   },
   "workspaces": [
     "packages/*"
