@@ -78,6 +78,8 @@ Make sure to add any other folders you make to your `next.config.js` after `next
 
 # Possible Errors
 
+1. Parsing
+
 ```sh
 Module parse failed: Unexpected token (4:5)
 You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
@@ -85,3 +87,25 @@ You may need an appropriate loader to handle this file type, currently no loader
 
 If you see that error, you haven't configured the `next.config.js` properly, see above.
 
+2. Installing packages
+
+Make sure you don't use different react-native/Expo versions in different packages. This will mess shit up.
+
+# Practices
+
+I tend to install 99% of my packages directly in the `expo-app` folder. It usually looks like this:
+
+```sh
+# open the app
+cd package/expo-app
+# add a package
+yarn add moti
+# go back to the root
+cd ../..
+# install again
+yarn install
+```
+
+The nice thing about the monorepo is that you only need each package to be in **one `package.json` file**. You don't need to add a dependency in every `package.json`. So I use my main app as the entry point for basically every dependency.
+
+I also run `yarn install` at the root every time I add a package, since I use a `patch-package` `postinstall` script at the root folder.
