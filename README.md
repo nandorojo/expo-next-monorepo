@@ -63,7 +63,7 @@ Add `@shared/` to `next.config.js` in your expo app's folder. This makes all fol
 const { withExpo } = require("@expo/next-adapter");
 
 // 🚨🚨🚨 if you rename @shared/, edit it here!
-const withTM = require("next-transpile-modules")(["@shared/"]);
+const withTM = require("next-transpile-modules")(["@shared/components"]);
 
 const withPlugins = require("next-compose-plugins");
 
