@@ -2,8 +2,6 @@
 
 Minimal monorepo with Expo/React Native Web + Next.js + TypeScript. Uses yarn workspaces.
 
-> This repo uses older versions of Expo/Next. You can easily upgrade them in your `packages/expo-app` folder.
-
 # Folders
 
 - `packages/components` (import as `@shared/components`)
@@ -112,38 +110,6 @@ I also run `yarn install` at the root every time I add a package, since I use a 
 
 # EAS Build
 
-If you're using EAS from Expo, you might need to add this to your `package.json`, with the packages you use:
-
-```json
-{
-  "expo-yarn-workspaces": {
-    "symlinks": [
-      "expo-analytics-segment",
-      "expo-asset",
-      "expo-blur",
-      "expo-clipboard",
-      "expo-font",
-      "expo-image-manipulator",
-      "expo-image-picker",
-      "expo-linear-gradient",
-      "expo-linking",
-      "expo-network",
-      "expo-progress",
-      "expo-status-bar",
-      "expo-video",
-      "expo-web-browser",
-      "expo-constants",
-      "@unimodules/core",
-      "@unimodules/react-native-adapter",
-      "unimodules-constants-interface",
-      "unimodules-font-interface",
-      "unimodules-app-loader",
-      "unimodules-file-system-interface",
-      "unimodules-image-loader-interface",
-      "unimodules-permissions-interface"
-    ]
-  }
-}
-```
+If you're using EAS from Expo, you might need to add packages to your `package.json`'s `expo-yarn-workspaces.symlinks` array.
 
 If you encounter a build error indicating you don't have these, you should add them. Apparently Expo is working on making this step simpler with a single symlink.
