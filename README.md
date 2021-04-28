@@ -109,3 +109,41 @@ yarn install
 The nice thing about the monorepo is that you only need each package to be in **one `package.json` file**. You don't need to add a dependency in every `package.json`. So I use my main app as the entry point for basically every dependency.
 
 I also run `yarn install` at the root every time I add a package, since I use a `patch-package` `postinstall` script at the root folder.
+
+# EAS Build
+
+If you're using EAS from Expo, you might need to add this to your `package.json`, with the packages you use:
+
+```json
+{
+  "expo-yarn-workspaces": {
+    "symlinks": [
+      "expo-analytics-segment",
+      "expo-asset",
+      "expo-blur",
+      "expo-clipboard",
+      "expo-font",
+      "expo-image-manipulator",
+      "expo-image-picker",
+      "expo-linear-gradient",
+      "expo-linking",
+      "expo-network",
+      "expo-progress",
+      "expo-status-bar",
+      "expo-video",
+      "expo-web-browser",
+      "expo-constants",
+      "@unimodules/core",
+      "@unimodules/react-native-adapter",
+      "unimodules-constants-interface",
+      "unimodules-font-interface",
+      "unimodules-app-loader",
+      "unimodules-file-system-interface",
+      "unimodules-image-loader-interface",
+      "unimodules-permissions-interface"
+    ]
+  }
+}
+```
+
+If you encounter a build error indicating you don't have these, you should add them. Apparently Expo is working on making this step simpler with a single symlink.
