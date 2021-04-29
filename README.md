@@ -113,3 +113,11 @@ I also run `yarn install` at the root every time I add a package, since I use a 
 If you're using EAS from Expo, you might need to add packages to your `package.json`'s `expo-yarn-workspaces.symlinks` array.
 
 If you encounter a build error indicating you don't have these, you should add them. Apparently Expo is working on making this step simpler with a single symlink.
+
+Typically you have to do this: 
+
+- Install an expo package
+- add it to the `symlinks` in `package.json` of your `packages/app`
+- `yarn` inside of `packages/app` (to trigger `postinstall` and symlink)
+- `cd ios`, `pod install`
+- Run the expo app (`expo run:ios`)
