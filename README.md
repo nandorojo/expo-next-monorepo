@@ -112,6 +112,18 @@ I also run `yarn install` at the root every time I add a package, since I use a 
 
 If you're using EAS from Expo, you might need to add packages to your `package.json`'s `expo-yarn-workspaces.symlinks` array.
 
+For starters, you should create a separate folder called `native-app` or something like that. That's where your bare `expo` app should live.
+
+Then you should put a `react-native` resolution in your root `package.json` to avoid version conflicts. Or, just make sure you have only one `react-native` in a package.json. It should be in your the package that has your bare app.
+
+Put this in your **root package.json** if you want to avoid excessive callbacks as an error:
+
+```json
+{
+  "resolutions": { "react-native": "0.63.4" }
+}
+```
+
 If you encounter a build error indicating you don't have these, you should add them. Apparently Expo is working on making this step simpler with a single symlink.
 
 Typically you have to do this: 
