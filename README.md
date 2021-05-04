@@ -5,7 +5,7 @@ Minimal monorepo with Expo/React Native Web + Next.js + TypeScript. Uses yarn wo
 # Folders
 
 - `packages/components` (import as `@shared/components`)
-- `packages/expo-app` (this is the app you run)
+- `packages/app` (contains both Expo and Next.js)
 
 # Start app
 
