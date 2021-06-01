@@ -133,3 +133,18 @@ Typically you have to do this:
 - `yarn` inside of `packages/app` (to trigger `postinstall` and symlink)
 - `cd ios`, `pod install`
 - Run the expo app (`expo run:ios`)
+
+## `expo-dev-client`
+
+After adding `expo-dev-client` in `packages/app`, run `expo prebuild`.
+
+Then, in your `packages/app/ios/Podfile`, update these lines:
+
+```diff
+- pod 'expo-dev-launcher', path: '../node_modules/expo-dev-launcher', :configurations => :debug
+- pod 'expo-dev-menu', path: '../node_modules/expo-dev-menu', :configurations => :debug
++ pod ‘expo-dev-launcher’, path: ‘../../../node_modules/expo-dev-launcher’, :configurations => :debug
++ pod ‘expo-dev-menu’, path: ‘../../../node_modules/expo-dev-menu’, :configurations => :debug
+```
+
+This should be solved with a config plugin, but I don't know how yet 🙃
