@@ -2,7 +2,7 @@
 
 Minimal monorepo with Expo/React Native Web + Next.js + TypeScript. Uses yarn workspaces.
 
-I recommend checking out [this](https://github.com/byCedric/eas-monorepo-example#-how-to-use-it) monorepo starter too.
+I recommend checking out [this](https://github.com/byCedric/eas-monorepo-example) monorepo starter too.
 
 # Folders
 
