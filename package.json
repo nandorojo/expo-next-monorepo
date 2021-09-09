@@ -10,5 +10,8 @@
   "scripts": {
     "native": "cd packages/app && yarn start",
     "web": "cd packages/app && yarn next"
+  },
+  "resolutions":{
+    "html-webpack-plugin": "5.3.1"
   }
 }
