@@ -13,7 +13,7 @@ I also recommend checking out [this](https://github.com/byCedric/eas-monorepo-ex
 # Folders
 
 - `packages/components` (import as `@shared/components`)
-- `packages/expo-app` (this is the app you run)
+- `packages/app` (contains both Expo and Next.js)
 
 # Start app
 
