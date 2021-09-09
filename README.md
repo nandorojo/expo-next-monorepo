@@ -2,9 +2,13 @@
 
 Minimal monorepo with Expo/React Native Web + Next.js + TypeScript. Uses yarn workspaces.
 
-For an Expo + Next.js monorepo that covers more use cases (such as installing Dripsy, using Next v11 and Webpack 5), I recommend [this one](https://github.com/axeldelafosse/expo-next-monorepo-example) by Axel Delafosse.
+## Alternatives
 
-I recommend checking out [this](https://github.com/byCedric/eas-monorepo-example) monorepo starter too.
+This repository purposefully has a very minimal structure.
+
+[This one by Axel Delafosse](https://github.com/axeldelafosse/expo-next-monorepo-example) has more features (Dripsy, Next.js v11, Webpack 5). 
+
+I also recommend checking out [this](https://github.com/byCedric/eas-monorepo-example) Expo monorepo (without Next.js) by Cedric from Expo.
 
 # Folders
 
